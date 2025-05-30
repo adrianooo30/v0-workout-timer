@@ -68,6 +68,7 @@ export default function WorkoutTimer() {
   // Initialize audio
   useEffect(() => {
     const createBeepSound = () => {
+    /* eslint-disable @typescript-eslint/no-explicit-any */
       const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
 
       // Create a longer, more noticeable tone sequence
